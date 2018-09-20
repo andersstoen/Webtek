@@ -1,4 +1,1 @@
-Jeg endrer noe for å sjekke
-
-
-Testxten
+Dette er et nytt forsøk på å legge til en fil
