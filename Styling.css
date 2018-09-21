@@ -1,0 +1,26 @@
+.body h2 {
+    font-family: helvetica;
+    font-style: bold;
+    margin-top: 200px;
+    
+    
+
+
+}
+
+.body p {
+    max-width: 30em;
+    font-size: 20px;
+    font-family: helvetica;
+}
+
+body {
+    margin-left: 30px;
+}
+
+img {
+    max-width: 600px;
+    position: block; 
+    
+    
+}
