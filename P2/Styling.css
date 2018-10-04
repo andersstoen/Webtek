@@ -1,0 +1,72 @@
+body {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    border-top: solid;
+    border-width: 2px;
+}
+
+header p {
+    text-align: center;
+    line-height: 0.6;
+    font-style: normal;
+}
+
+h1 {
+    font-family: Futura;
+    font-size: 48pt;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: Futura;
+    font-size: 24pt;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+p {
+    font-family: Verdana;
+    font-size: 12pt;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.7;
+}
+
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    font-family: Futura;
+    font-size: 13pt;
+    font-style: normal;
+    font-weight: 700;
+    padding: 10px;
+}
+td {
+    font-family: Futura;
+    font-size: 11pt;
+    font-style: normal;
+    font-weight: 400;
+    padding: 10px;
+    text-align: left
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #afbfd8;
+}
