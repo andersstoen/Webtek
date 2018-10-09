@@ -3,7 +3,7 @@
 
 <head>
     <title>Webtek gruppe 36</title>
-    <link rel="icon" type="image/jpg" href="Pics/theSignLogo.jpg">
+    <link rel="icon" type="image/png" href="pics/favicon.png">
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="Styling.css">
 </head>
@@ -17,7 +17,7 @@
     </header>
     <section>
         <h2>Administrative Details</h2>
-        <p>Danny Bao Nguyen, editor of <strong>TheSign</strong> and board member of Leonardo, the Industrial Design student organization at NTNU.</p>
+        <p>Our client is Danny Bao Nguyen, editor of <strong>TheSign</strong> and board member of Leonardo, the Industrial Design student organization at NTNU.</p>
     </section>
     <section>
         <h2>Purpose, goals, and audience</h2>
@@ -25,29 +25,101 @@
     </section>
     <section>
         <h2>Navigation Structure</h2>
+        <p>The navigation will be laid out in the form of a clique structure, where the navigation bar is the main hub. It is through this one can access the other main elements of the page (home, about, issues and contact). As the website is not particularily complex in terms of scope, the user will find navigation swift and seamless.
+        </p>
+        <p>This schematic complies with the current standard of web design, where the clique structure paired with a navigation bar is highly prevalent.</p>
     </section>
     <section>
         <h2>Page Layout and Appearance</h2>
         <p>We will be using the font Futura, in medium and bold. The size will vary depending on the text type. The largest headings will be in size 48, the smaller headings will be in 24, the description underneath some of the headings will be in size 14, the different words/elements in the navbar will be in size 20 and finally, the paragraphs will be in size 16.</p>
         <p>The color scheme for our website will be quite simple. We wish for the text to be in black, unless it is a heading, then they will be in different shades of grey. The background color will be white. When hovering over links they will become underlined. We will not be using borders, and will only be using a shadows on the navbar, which will be grey.</p>
         <p>The navbar will be positioned at the top. It will be simple, white, with a drop shadow that distinguishes it from the rest of the page. The navbar will contain three elements/words (Home, About us, Contact us) and all the way to the left, the logo of TheSign.</p>
-        <p></p>
+        <p>The footer will be in a darker grey, with white colored text elements. The social icons will be in white as well, and all the way to the left there will be an input field which permits the user to subscribe to the school paper, which will also be in white.</p>
         <p>There will be no background images.</p>
         <p>Our universal design decisions are quite simple and elegant for several reasons. Firstly, they increase the website's readability, and permit easy navigation, but most importantly, they are simple so as not to distract from the images and the content of the school paper, which naturally should be the main attraction of the website.</p>
     </section>
     <section>
         <h2>Content</h2>
+        <h3>Landing page</h3>
+        <p>The home page is the first page that will appear when users visit the website. The page is kept simple with large pictures, encouraging users to further explore the content of the site. Texts are kept to a minimum in order to not be overwhelming and distract attention from the pictures. The content is placed in a 24 column grid. This gives the page a tight layout, but also flexibility. The most important content, such as the newest issues will be placed on the first row. These will be bigger with a height of 560 px. Other articles will vary between 340px and 438px depending on the image format (landscape or portrait).</p>
+        <p>The goal is to give visitors a understanding of what The Sign emphasizes, clean design sprinkled with good photography and illustrations.</p>
+        <img src="pics/landing.png" alt="landing" id="landing">
+
+        <h3>About</h3>
+        <p>The “about page” will contain a short text describing what The Sign does, who they are and their values. An illustration on the right depicts the whole editorial team. The layout is kept clean and simple, similar to the landing page. The purpose of the page is to show the user who the editorial staff is and their different roles.</p>
+        <img src="pics/about.png" alt="about" id="about">
+
+        <h3>Contact us</h3>
+        <p>The “contact page” is where you can get in touch with The Sign. This page is mainly for potential new members and sponsors. The page consists of a bold header on top, followed by a text describing what we are looking for in new members or partners. The form on the left can be filled out and submitted. The user will not be able to submit the form if not all of the input fields are filled. Whenever an input field is pressed, the name of this input field moves to the top of the field. To the left there is a picture of the recruitment manager. The should make it easy for new members and partners to contact us. We decided to use a contact form, in order to avoid directing the user away from our page (to other mail services).</p>
+        <img src="pics/contact.png" alt="contact" id="contact">
+        <img src="pics/contact2.png" alt="contact2" id="contact2">
+
+        <h3>Issue</h3>
+        <p>The “issue page” presents an image of the front page of the currently selected issue and a short description next to it. Underneath the description there is a “download” button, that when clicked downloads a PDF version of the issue on to the users device (obviously). Beneath all of this the user can view and access (by clicking on them) all the articles published in this issue. Since there is a fair amount of information and pictures on this page, it is crucial that the layout is kept clean and simple.</p>
+        <p>The design of this page makes it simple for the user to locate and read the different articles that draw their attention. The simplicity of the website also presents TheSign’s work in a classy and professional way and hopefully contributes to increasing the number of readers of TheSign.</p>
+        <img src="pics/issue.png" alt="issue" id="issue">
+
+        <h3>Article</h3>
+        <p>The “article page” presents the content of an article that the user has clicked on. The text and the images/illustrations are clearly in focus, and little else is present on this part of the page. Underneath the article, the website will display three images with corresponding headings. These are links to other articles which are similar to the article the user is currently viewing. The website is therefore suggesting other articles to the user, to help him/her further explore the work of TheSign’s editorial staff.</p>
+        <p>With this design we expect the user to have a pleasant experience while exploring the content of TheSign.
+        </p>
+        <img src="pics/article.png" alt="article" id="article">
+
+        <h3>Navigation bar and footer</h3>
+        <p>We intent to write JavaScript applications for inserting the global elements in every HTML-file. </p>
+        <img src="pics/plain.png" alt="plain" id="plain">
+
+
+
     </section>
     <section>
         <h2>Minimum Requirements</h2>
+        <h3>Random quote generator</h3>
+    <p>On one of the last pages in every issue, TheSign publishes a number of quotes said by design students. They are usually funny and relatable and are very popular among the readers. We wish to randomly generate one quote in the footer every time the page is refreshed or everytime the user is sent to another page.</p>
+    <h3>Form validation</h3>
+    <p>When a user clicks on an article or on an issue and reads through the page’s content, we would like for the website to show the user some other articles or issues that are similar to what the user is reading. They will be situated at the bottom of the page, right above the footer. This means that we wish for the articles and issues to have tags so that the website can find relevant content to display.</p>
+    <h3>Relevant content generator</h3>
+    <p>On the “contact us” page we want the user to get feedback when they fill in the form and click send. Therefore we want to incorporate a form validation in our website.</p>
+    <h3>Countdown for next issue</h3>
+    <p>When the staff is working on a new issue they would like for the public to know when this issue will be released. We want to make it very clear when this happens and we’re thinking in a slightly dramatic way, so as to increase suspense. We wish to incorporate a countdown at the top of the landing page, right below the navbar. This countdown will have days, hours, minutes and maybe even seconds. We will be looking into the possibility of making the countdown live, so that the user doesn't have to refresh the page to update the timer.</p>
     </section>
     <section>
         <h2>Plan</h2>
-        <table style="width: inherit" id="plantable">
+        <p>Below is a list of alle the files and content we will need to make and aquire to build the website. </p>
+        <div id="filelist">
+        <ul>
+            <li><a href="#landing">index.html</a></li>
+            <li><a href="#about">about.html</a></li>
+            <li><a href="#contact">contact.html</a></li>
+            <li><a href="#issue">issue.html</a></li>
+            <li><a href="#article">article.html</a></li>
+            <li>images/</li>
+            <ul>
+                <li>[...].png*</li>
+                <li>[...].gif</li>
+            </ul>
+            <!-- <li>modularity/</li> -->
+            <li>scripts/</li>
+            <ul>
+                <li>quoteGen.js</li>
+                <li>formValid.js</li>
+                <li>relatedCont.js</li>
+                <li>countdown.js</li>
+                <li><a href="#plain">navBar.js</a></li>
+                <li><a href="#plain">footer.js</a></li>
+            </ul>
+            <li>style.css</li>
+        </ul>
+        </div>
+        <p style="font-size: 13px; line-height: 1.2">* Pictures and logo are provided by TheSign and will be retrived from the picture database on Google Disk. </p>
+        <p>This is the schedule for work delegation as well as deadlines for every task and file.</p>
+
+
+        <table id="plantable">
             <tr>
                 <th>File</th>
                 <th>What</th>
-                <th>Whom</th>
+                <th>Who</th>
                 <th>Deadline</th>
             </tr>
             <tr>
@@ -87,14 +159,61 @@
                 <td>14.10</td>
             </tr>
             <tr>
+                <td>GIFs</td>
+                <td>All Gifs for buttons.</td>
+                <td>Bao</td>
+                <td>14.10</td>
+            </tr>
+            <tr>
                 <td>style.css</td>
                 <td>A single master CSS stylesheet.</td>
-                <td>All of us</td>
+                <td>All</td>
                 <td>21.10</td>
+            </tr>
+            <tr>
+                <td>header.part</td>
+                <td>Navigation bar.</td>
+                <td>Bao</td>
+                <td>21.10</td>
+            </tr>
+            <tr>
+                <td>footer.part</td>
+                <td>Footer with info and social media links.</td>
+                <td>Victoria</td>
+                <td>21.10</td>
+            </tr>
+            <tr>
+                <td>quoteGen.js</td>
+                <td>This script randomly displays a quote from the 'hørt av folk' page of TheSign.</td>
+                <td>Anders</td>
+                <td>28.10</td>
+            </tr>
+            <tr>
+                <td>formValid.js</td>
+                <td>Script for form validation on contact page.</td>
+                <td>Victoria</td>
+                <td>28.10</td>
+            </tr>
+            <tr>
+                <td>relatedCont.js</td>
+                <td>This will suggest related content pertinent to what the user is currently reading</td>
+                <td>Bao</td>
+                <td>28.10</td>
+            </tr>
+            <tr>
+                <td>countdown.js</td>
+                <td>Displaying a countdown for the next issue.</td>
+                <td>Anders</td>
+                <td>28.10</td>
+            </tr>
+            <tr>
+                <td>Final check</td>
+                <td>Final check</td>
+                <td>All</td>
+                <td>04.11</td>
             </tr>
         </table>
     </section>
-
 
 </body>
 
