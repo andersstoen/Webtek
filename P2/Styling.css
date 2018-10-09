@@ -16,12 +16,14 @@ p {
     text-align: center;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
 h1 {
-    
+
     font-family: Futura;
     font-size: 48pt;
     font-style: normal;
@@ -64,19 +66,15 @@ img {
     margin-right: auto;
     margin-bottom: 30px;
     border: solid;
-    
 }
 
-
-ul {
+#filelist {
     font-family: Futura;
     font-size: 13pt;
     font-style: normal;
     font-weight: 400;
-    margin-left: inherit;
-    margin-right: inherit;
-    display:table;
-    margin:0 auto;
+    display: table;
+    margin: 0 auto;
     padding: 10px;
 }
 
@@ -92,13 +90,16 @@ a:hover {
     font-weight: 700;
 }
 
-table, th, td {
+table,
+th,
+td {
     border-bottom: 1px solid black;
     border-collapse: collapse;
     max-width: 650px;
 }
 
 table {
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -128,9 +129,3 @@ tr:nth-child(even) {
 tr:hover {
     background-color: #afbfd8;
 }
-
-
-
-
-
-
