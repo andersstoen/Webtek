@@ -1,13 +1,9 @@
 body {
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 30px;
+    height: 100%;
 }
 
 section {
-    border-top: solid;
+    border-bottom: solid;
     border-width: 2px;
 }
 
@@ -16,22 +12,43 @@ header p {
     font-style: normal;
 }
 
+p {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
 h1 {
+    
     font-family: Futura;
     font-size: 48pt;
     font-style: normal;
     font-weight: 400;
 }
 
+
 h2 {
     font-family: Futura;
     font-size: 24pt;
     font-style: normal;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
+h3 {
+    padding-top: 1em;
+    font-family: Futura;
+    font-size: 18pt;
+    font-style: normal;
+    font-weight: 200;
+}
 
 p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
     font-family: Verdana;
     font-size: 12pt;
     font-style: normal;
@@ -40,14 +57,53 @@ p {
     line-height: 1.7;
 }
 
+img {
+    display: block;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: solid;
+    
+}
+
+
+ul {
+    font-family: Futura;
+    font-size: 13pt;
+    font-style: normal;
+    font-weight: 400;
+    margin-left: inherit;
+    margin-right: inherit;
+    display:table;
+    margin:0 auto;
+    padding: 10px;
+}
+
+ul a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    font-family: Futura;
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: 700;
+}
+
 table, th, td {
     border-bottom: 1px solid black;
     border-collapse: collapse;
+    max-width: 650px;
 }
+
 table {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
+
 th {
     font-family: Futura;
     font-size: 13pt;
@@ -55,6 +111,7 @@ th {
     font-weight: 700;
     padding: 10px;
 }
+
 td {
     font-family: Futura;
     font-size: 11pt;
@@ -63,9 +120,17 @@ td {
     padding: 10px;
     text-align: left
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 tr:hover {
     background-color: #afbfd8;
 }
+
+
+
+
+
+
