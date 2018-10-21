@@ -1,0 +1,51 @@
+.title{
+    font-size: 44pt;
+}
+
+body{
+    font-family:futura, arial;
+    
+}
+
+#body-contact{
+    position:absolute;
+    margin-left:100px;
+}
+
+.paragraph{
+    width:600px;
+    font-size:12pt;
+}
+
+.input{
+    border: none;
+    border-bottom: 1px solid black;
+    outline:none;
+    width: 400px;
+    padding: 5px;
+    margin-bottom:20px;
+    box-sizing: border-box;
+    display: block;
+    font-size:12pt;
+}
+
+.form-o{
+    display: block;
+    padding:5px;
+    color:grey;
+}
+
+#f-text{
+    resize: none;
+    height:150px;
+}
+
+.input:focus{
+    
+}
+
+input[type=submit]{
+    font-size:14pt;
+    border: none;
+    font-weight:700;
+}
