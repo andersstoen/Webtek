@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.recommended {
+    background-color:#F1F1F1;
+    display: table;
+    padding-left: 0;
+    padding-right: 20%px;
+    
+    
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 20px;
+    
+}
