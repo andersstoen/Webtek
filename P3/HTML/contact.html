@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title> Contact Us HTML sheet</title>
+      <title> TheSign - Contact Us</title>
+      <link rel='stylesheet' type='text/css' href='../style.css'>
   </head>
-  <body>
+  <body id='body-contact'>
 
-    <h1 id='title.contact'> Hello there</h1>
+    <h1 id='title.contact' class='title'> Hello there </h1>
     
     <p class='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel hendrerit justo. In a velit molestie, laoreet dui in, tempus nisi. Aenean  interdum at ante vel mollis. Suspendisse lectus nisi, feugiat vitae mi ac, vulputate fringilla est. Nunc at convallis est, sit amet suscipit augue. Ut neque dui, scelerisque quis odio id, pretium accumsan sem. Aliquam pellentesque auctor nibh sit amet consequat. Nulla non placerat orci, et viverra risus. Vivamus cursus et mi nec sodales.</p>
     
@@ -14,15 +15,12 @@
     <h6 id='navn-ransvarlig'>Victoria Welle Fjellbirkeland</h6>
       
     <form>
-        <label id='form-o1' class='form-o'>Name</label>
-        <input type='text' name='form-name' id='f-name' class='input'>
-        <br>
-        <label id='form-o2' class='form-o'>Email</label>
-        <input type='email' name='form-email' id='f-email' class='input'>
-        <br>
-        <label id='form-o3' class='form-o'>What's up?</label>
-        <textarea name="form-text" id='f-text' class='input'></textarea>
-        <br>
+        <label id='form-o1' class='form-o' for='f-name'></label>
+        <input type='text' name='form-name' placeholder='Name' id='f-name' class='input' >
+        <label id='form-o2' class='form-o' for='f-email'></label>
+        <input type='email' name='form-email' placeholder='Email'id='f-email' class='input'>
+        <label id='form-o3' class='form-o' for='f-text'></label>
+        <textarea name="form-text" placeholder="What's on your mind?"id='f-text' class='input'></textarea>
         <input type='submit' name='form-submit' value='Submit'>
         
       
