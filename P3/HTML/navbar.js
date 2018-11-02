@@ -1,8 +1,8 @@
-var link = document.createElement('link');
-link.setAttribute('rel', 'stylesheet');
-link.type = 'text/css';
-link.href = 'navbar.css';
-document.head.appendChild(link);
+//var link = document.createElement('link');
+//link.setAttribute('rel', 'stylesheet');
+//link.type = 'text/css';
+//link.href = 'navbar.css';
+//document.head.appendChild(link);
 
 var navigationbar = '<header id="navbar">';
 navigationbar += '<img src="imgs/theSignLogo.jpg" alt="thesign" id="TheSign">';
