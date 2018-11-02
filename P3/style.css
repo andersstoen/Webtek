@@ -1,22 +1,25 @@
+/*alle body*/
+body{
+    font-family:futura, arial;
+    position:absolute;
+    margin: 50px 80px 50px;
+    
+}
+
+/*class for alle hovedoverskrifter*/
 .title{
     font-size: 44pt;
 }
 
-body{
-    font-family:futura, arial;
-    
-}
-
-#body-contact{
-    position:absolute;
-    margin-left:100px;
-}
-
+/*alle paragrafer*/
 .paragraph{
     width:600px;
     font-size:12pt;
 }
 
+/*FORM*/
+
+/*for inputfeltene i form i contact.html*/
 .input{
     border: none;
     border-bottom: 1px solid black;
@@ -29,23 +32,90 @@ body{
     font-size:12pt;
 }
 
-.form-o{
-    display: block;
-    padding:5px;
-    color:grey;
-}
-
+/*for textarea i form i contact.html*/
 #f-text{
     resize: none;
     height:150px;
 }
-
-.input:focus{
-    
+/*den her lar jeg stå fordi jeg tror den kan hjelpe med animasjonen i formen*/
+.input:focus{  
 }
 
-input[type=submit]{
+/*styling for submit knapp*/
+.finito{
     font-size:14pt;
     border: none;
     font-weight:700;
 }
+
+.finito:hover{
+    color:grey;
+}
+
+#rekrutt{
+    position:absolute;
+    right:0;
+    top:-50px;
+    width:300px;
+}
+
+#ransvarlig{
+    position:absolute;
+    left:960px;
+    top:360px;
+    color:#6E6D6D;
+}
+
+#navn-ransvarlig{
+    position:absolute;
+    left:960px;
+    top:380px;
+    color:#6E6D6D;
+}
+
+form{
+    position: absolute;
+    top:100px;
+    left:0;
+}
+
+#divform{
+    position:relative;
+    height:450px;
+    width:1260px;
+}
+
+/*ISSUE */
+
+#lastned{
+    position: relative;
+    top:50px;
+}
+
+#firstdiv{
+    position: relative;
+    width: 1260px;
+    height: 900px;
+}
+
+.divarticle{
+    position:relative;
+    height:550px;
+    width:1260px;
+}
+
+#forside{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 800px;
+}
+
+.articleimg{
+    position:absolute;
+    top:50px;
+    right:0;
+    width:600px;
+}
+
+
