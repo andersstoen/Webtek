@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="footer">
+
+        <div id="quoted-display"></div>
+        <div class="links">
+            <h4>Work</h4>
+            <h4>About</h4>
+            <h4>Contact us</h4>
+
+        </div>
+
+        <div class="social_icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+
+        <div class="subscription-form">
+            <p id="text_form">Hold deg oppdattert</p>
+            <form id="form">
+
+                <input type="email" id="input-field" placeholder="Email" required>
+                <input type="submit" id="send_button" value="Send">
+            </form>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        var quotes = ["kjøttfløya mi e det som binde oss sammen - Bao", "Jeg tenker fremdeles på ubeskrivelig ensomhet - Christer ", "Caspar har begynt å kalle meg mamma - Live", "Føler jeg er mer redd for bananer enn pistoler - Rannveig"]
+
+        function newQuote() {
+            var randomNumber = Math.floor(Math.random() * (quotes.length));
+            document.getElementById("quoted-display").innerHTML = quotes[randomNumber];
+
+            console.log(newQuote())
+
+        }
+        window.onload = newQuote;
+
+
+        var form = document.getElementById("form");
+        form.addEventListener("submit", function(event) { /*Gjør at siden ikke oppdatteres ved trykk av knapp*/
+            event.preventDefault();
+            document.getElementById("send_button").value = "Tusen takk!";
+        });
+    </script>
+</body>
+</html>
+
+
+

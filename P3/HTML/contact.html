@@ -1,34 +1,44 @@
 <!DOCTYPE html>
-<html>
-  <head>
-      <title> TheSign - Contact Us</title>
-      <link rel='stylesheet' type='text/css' href='../style.css'>
-  </head>
-  <div id="navbarcontainer"></div>
-  
-  <body id='body-contact'>
+<html lang="no">
+
+<head>
+    <title> TheSign - Contact Us</title>
+    <link rel='stylesheet' type='text/css' href='../style.css'>
+</head>
+<div id="navbarcontainer"></div>
+<div id="footercontainer"></div>
+
+<body id='body-contact'>
 
     <h1 id='title.contact' class='title'> Hello there </h1>
-    
-    <p class='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel hendrerit justo. In a velit molestie, laoreet dui in, tempus nisi. Aenean  interdum at ante vel mollis. Suspendisse lectus nisi, feugiat vitae mi ac, vulputate fringilla est. Nunc at convallis est, sit amet suscipit augue. Ut neque dui, scelerisque quis odio id, pretium accumsan sem. Aliquam pellentesque auctor nibh sit amet consequat. Nulla non placerat orci, et viverra risus. Vivamus cursus et mi nec sodales.</p>
-    
-    <img id='rekrutt'>
-    <h4 id='ransvarlig'>Rekrutteringsansvarlig</h4>
-    <h6 id='navn-ransvarlig'>Victoria Welle Fjellbirkeland</h6>
-      
-    <form>
-        <label id='form-o1' class='form-o' for='f-name'></label>
-        <input type='text' name='form-name' placeholder='Name' id='f-name' class='input' >
-        <label id='form-o2' class='form-o' for='f-email'></label>
-        <input type='email' name='form-email' placeholder='Email'id='f-email' class='input'>
-        <label id='form-o3' class='form-o' for='f-text'></label>
-        <textarea name="form-text" placeholder="What's on your mind?"id='f-text' class='input'></textarea>
-        <input type='submit' name='form-submit' value='Submit'>
-        
-      
-    </form>
-      
-      
-      <script type="text/javascript" src="navbar.js"></script>
-  </body>
+
+    <p class='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel hendrerit justo. In a velit molestie, laoreet dui in, tempus nisi. Aenean interdum at ante vel mollis. Suspendisse lectus nisi, feugiat vitae mi ac, vulputate fringilla est. Nunc at convallis est, sit amet suscipit augue. Ut neque dui, scelerisque quis odio id, pretium accumsan sem. Aliquam pellentesque auctor nibh sit amet consequat. Nulla non placerat orci, et viverra risus. Vivamus cursus et mi nec sodales.</p>
+
+
+
+    <div id="divform">
+        <form>
+            <label id='form-o1' class='form-o' for='f-name'></label>
+            <input type='text' name='form-name' placeholder='Name' id='f-name' class='input' required>
+            <label id='form-o2' class='form-o' for='f-email'></label>
+            <input type='email' name='form-email' placeholder='Email' id='f-email' class='input' required>
+            <label id='form-o3' class='form-o' for='f-text'></label>
+            <textarea name="form-text" placeholder="What's on your mind?" id='f-text' class='input' required></textarea>
+            <input type='submit' name='form-submit' value='Submit'>
+        </form>
+
+        <img id='rekrutt' src="imgs/Redpress/_MG_3073.jpg" alt='rekruttansv'>
+        <h4 id='ransvarlig' class='tekstansv'>Rekrutteringsansvarlig</h4>
+        <h6 id='navn-ransvarlig' class='tekstansv'>Victoria Welle Fjellbirkeland</h6>
+
+    </div>
+
+    <div id="message">
+        <p id="success"></p>
+    </div>
+
+    <script type="text/javascript" src="valform.js"></script>
+    <script type="text/javascript" src="navbar.js"></script>
+</body>
+
 </html>

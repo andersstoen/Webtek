@@ -1,16 +1,42 @@
+html {
+    position: relative;
+    margin-top: 95px;
+    font-family: futura, arial;
+    margin-bottom: 150px;
+}
+
+body {
+    height: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+
 .title {
     font-size: 44pt;
 }
 
-body {
-    font-family: futura, arial;
-    margin-top: 95px;
-
+.paragraph {
+    width: 600px;
+    font-size: 12pt;
 }
 
 #body-contact,
-#body-about {
+#body-about,
+#body-article {
     margin-left: 100px;
+}
+
+#article_pic {
+    width: 45%;
+    float: right;
+    display: block;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    padding-right: 100px;
+}
+
+#body-contact {
+    margin-bottom: 70px;
 }
 
 /* These are for the about page */
@@ -26,10 +52,8 @@ body {
 
 /* End */
 
-.paragraph {
-    width: 600px;
-    font-size: 12pt;
-}
+
+/* FORM styling */
 
 .input {
     border: none;
@@ -54,18 +78,97 @@ body {
     height: 150px;
 }
 
-.input:focus {}
+/* .input:focus {} */
 
-input[type=submit] {
+.finito {
     font-size: 14pt;
     border: none;
     font-weight: 700;
 }
 
+.finito:hover {
+    color: grey;
+}
 
-/* Anders' header CSS */
+#rekrutt {
+    position: absolute;
+    right: 100px;
+    top: -50px;
+    width: 300px;
+}
+
+#ransvarlig {
+    position: absolute;
+    top: 360px;
+    right: 100px;
+    color: #6E6D6D;
+}
+
+#navn-ransvarlig {
+    position: absolute;
+    top: 380px;
+    right: 100px;
+    color: #6E6D6D;
+}
+
+/* DENNE MÅ FIKSES */
+
+form {
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+/* DEN JA */
+
+#divform {
+    position: relative;
+    height: 450px;
+    width: 100%;
+}
+
+/* FORM end */
+
+
+/* ISSUE styling */
+
+#lastned {
+    position: relative;
+    top: 50px;
+}
+
+#firstdiv {
+    position: relative;
+    width: 1260px;
+    height: 900px;
+}
+
+.divarticle {
+    position: relative;
+    height: 550px;
+    width: 1260px;
+}
+
+#forside {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    width: 800px;
+}
+
+.articleimg {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 600px;
+}
+
+/* ISSUE end */
+
+
+/* Anders' HEADER styling */
+
 header {
-    background-color: white;
     background-color: white;
     box-shadow: 0 0 5px 1px lightgray;
     position: fixed;
@@ -91,6 +194,16 @@ header * {
 
 #TheSign:hover {
     transform: scale(1.08);
+}
+
+@media only screen and (max-width: 600px) {
+    #TheSign {
+        height: 25px;
+        margin-left: 40px;
+        position: fixed;
+        transition: all .2s ease-in-out;
+        display: none;
+    }
 }
 
 #nav {
@@ -166,22 +279,24 @@ header * {
     transition-delay: 0s, 0.25s, 0s;
 }
 
-/* End */
+/* HEADER end */
 
+
+/* ABOUT styling */
 
 .content {
-    width: 160px !important;
-    float: left !important;
+    width: 160px;
+    float: left;
 }
 
 .content img {
-    width: 150px !important;
-    float: left !important;
-    padding: 5px !important;
+    width: 150px;
+    float: left;
+    padding: 5px;
 }
 
 .panel {
-    width: 480px !important;
+    width: 480px;
 }
 
 .masonry {
@@ -190,9 +305,43 @@ header * {
     margin-right: 100px;
 }
 
+@media only screen and (max-width: 1200px) {
+
+    #abouttext {
+        width: 70%;
+        text-align: center;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 40px;
+    }
+
+    #body-about {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+    .masonry {
+        float: none;
+        width: 480px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+
+/* ABOUT end */
+
+
+/* WORK styling */
+
 .columnleft {
     float: left;
     width: 50%;
+
 }
 
 .columnright {
@@ -200,17 +349,205 @@ header * {
     width: 50%;
 }
 
-.card {
-    padding: 1em;
-    background-color: #fafafa;
-    width: 80%;
-    padding: 5%;
-    margin: 5%;
+.columnleft a {
+    width: 90%;
+    padding-left: 7%;
+    padding-right: 3%;
+    padding-bottom: 32px;
+}
+
+.columnright a {
+    width: 90%;
+    padding-left: 3%;
+    padding-right: 7%;
+    padding-bottom: 32px;
+}
+
+.card:hover > .article_title {
+    color: black;
+}
+
+.card:hover > .article_description {
+    color: black;
 }
 
 .card img {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
     object-fit: contain;
-    margin: 
+    margin-bottom: 10px;
 }
+
+.article_title {
+    color: #6E6D6D;
+    font-size: 12pt;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.article_description {
+    color: #6E6D6D;
+    font-size: 10pt;
+    font-weight: 100;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* WORK end */
+
+
+/* Footer code */
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    /* Height of the footer */
+    background: grey;
+    bottom: -150px;
+    left: 0;
+    display: block;
+}
+
+.links {
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+    color: white;
+}
+
+.social_icons {
+    position: absolute;
+    color: black;
+    right 50px;
+    bottom: 10%;
+}
+
+.fa {
+    width: 20px;
+    color: white;
+}
+
+.newsletter {
+    position: absolute;
+    right: 10%;
+    bottom: 50%;
+}
+
+.social_icons {
+    right: 19%;
+    bottom: 30%;
+}
+
+
+#mail {
+    background-color: gray;
+    border: 2px solid white;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+#send {
+    background-color: gray;
+    border: 2px solid white;
+    height: 36px;
+    color: white;
+}
+
+#quoted-display {
+    position: relative;
+    color: white;
+    max-width: 200px;
+    padding: 30px;
+    text-align: center;
+    left: 0;
+}
+
+#input-field {
+    background-color: gray;
+    border: 2px solid white;
+    height: 30px;
+    color: white;
+    font-size: 14px;
+}
+
+#send_button {
+    background-color: gray;
+    border: 2px solid white;
+    height: 33px;
+    color: white;
+}
+
+.subscription-form {
+    position: absolute;
+    right: 10%;
+    bottom: 30%;
+    float: right;
+    color: white;
+}
+
+@media only screen and (max-width: 720px) {
+    #quoted-display {
+        display: none;
+    }
+
+    .links {
+        left: 40px;
+    }
+}
+
+/*  FOOTER End */
+
+
+/* RECOMMENDED styling */
+
+.recommended {
+    background-color: #F1F1F1;
+    display: table;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-left: -100px;
+}
+
+#header_recommend {
+    margin-left: 20px;
+
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+/* RECOMMENDED end */
+
+
+/* VALIDATION */
+
+.message{
+    position:absolute;
+    padding:5px 10px 5px;
+    border: 2px grey solid;
+    visibility: hidden;  
+}
+
+.correct{
+    visibility: visible;
+    animation-name: success;
+    animation-duration: 2s;
+}
+
+@keyframes success {
+    from {opacity: 0;}
+    to { opacity:1;}
+}
+
+
+/* VALIDATION end */
